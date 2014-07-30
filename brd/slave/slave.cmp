@@ -1,0 +1,164 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = mar 29 jul 2014 21:36:34 CEST
+
+BeginCmp
+TimeStamp = /53D790C1;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D790A8;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78B81;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = Capacitors_SMD:c_elec_5x5.3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7A27E;
+Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_SMD:c_elec_4x5.3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7A2F5;
+Reference = C5;
+ValeurCmp = 10nF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78E44;
+Reference = C6;
+ValeurCmp = 22pF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D79083;
+Reference = C7;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78EF9;
+Reference = C8;
+ValeurCmp = 22pF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78C20;
+Reference = C9;
+ValeurCmp = 100pF;
+IdModule  = Capacitors_SMD:c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78762;
+Reference = IC1;
+ValeurCmp = ATMEGA328P-A;
+IdModule  = SMD_Packages:TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7886C;
+Reference = P1;
+ValeurCmp = CONN_3X2;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7BFB0;
+Reference = P2;
+ValeurCmp = CONN_8;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x08;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7D8D3;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7CFCE;
+Reference = P4;
+ValeurCmp = CONN_6;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x06;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7BE74;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = Wire_Pads:SolderWirePad_single_2mmDrill;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7F959;
+Reference = Q1;
+ValeurCmp = BC847;
+IdModule  = Transistors_SMD:sot23;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7B1C5;
+Reference = R1;
+ValeurCmp = 10r;
+IdModule  = SMD_Packages:SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D7B22A;
+Reference = R2;
+ValeurCmp = 10r;
+IdModule  = SMD_Packages:SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D79006;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78C05;
+Reference = R4;
+ValeurCmp = 1M;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78BE4;
+Reference = R5;
+ValeurCmp = 2k2;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78AC0;
+Reference = U1;
+ValeurCmp = LM78L05ACZ;
+IdModule  = Housings_SOT-89:SOT89-3_Housing_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78F12;
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = Crystals_Oscillators_SMD:Q_49U3HMS;
+EndCmp
+
+EndListe
