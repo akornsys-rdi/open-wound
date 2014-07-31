@@ -50,43 +50,43 @@ void setup() {
 }
 
 void loop() {
-   static boolean cal = true;
-   static unsigned long timer = 0;
-   static unsigned long maxval = 0;
-   static unsigned long minval = 0xFFFFFFFF;
-   static unsigned long rangeval = 0;
-   static unsigned long readval = 0;
-   
-   //calibración inicial
-   timer = millis();
-   readval = blade.capacitiveSensor(30);
-   if (timer < CALTIMER) {
-     cal = true;
-     if (readval > maxval) maxval = readval;
-     if (readval < minval) minval = readval;
-   }
-   else {
-     //imprime los valores de calibración
-     if (cal) {
-       cal = false;
-       rangeval = maxval - minval;
-       Serial.print("max: ");
-       Serial.println(maxval, DEC);
-       Serial.print("min: ");
-       Serial.println(minval, DEC);
-       Serial.print("range: ");
-       Serial.println(rangeval, DEC);
-     }
-     else {
-       //bucle sin fin de lectura-comparación-salida
-       do {
-         readval = blade.capacitiveSensor(30);
-         if (((readval - maxval) > (rangeval * THRESHOLD)) && (readval > maxval)) digitalWrite(2, HIGH);
-         else digitalWrite(2, LOW);
-         delay(50);
-         Serial.println(readval);
-       } while(1);
-     }
-  } 
+    static boolean cal = true;
+    static unsigned long timer = 0;
+    static unsigned long maxval = 0;
+    static unsigned long minval = 0xFFFFFFFF;
+    static unsigned long rangeval = 0;
+    static unsigned long readval = 0;
+    
+    //calibración inicial
+    timer = millis();
+    readval = blade.capacitiveSensor(30);
+    if (timer < CALTIMER) {
+       cal = true;
+       if (readval > maxval) maxval = readval;
+       if (readval < minval) minval = readval;
+    }
+    else {
+        //imprime los valores de calibración
+        if (cal) {
+            cal = false;
+            rangeval = maxval - minval;
+            Serial.print("max: ");
+            Serial.println(maxval, DEC);
+            Serial.print("min: ");
+            Serial.println(minval, DEC);
+            Serial.print("range: ");
+            Serial.println(rangeval, DEC);
+        }
+        else {
+            //bucle sin fin de lectura-comparación-salida
+            do {
+                readval = blade.capacitiveSensor(30);
+                if (((readval - maxval) > (rangeval * THRESHOLD)) && (readval > maxval)) digitalWrite(2, HIGH);
+                else digitalWrite(2, LOW);
+                delay(50);
+                Serial.println(readval);
+            } while(1);
+        }
+    } 
 }
 
