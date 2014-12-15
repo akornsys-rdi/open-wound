@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = mar 29 jul 2014 21:36:34 CEST
+Cmp-Mod V01 Created by Cvpcb 0.201412031631+5310~19~ubuntu14.04.1-product   date = sáb 06 dic 2014 19:16:13 CET
 
 BeginCmp
 TimeStamp = /53D790C1;
@@ -64,13 +64,6 @@ IdModule  = Capacitors_SMD:c_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /53D78762;
-Reference = IC1;
-ValeurCmp = ATMEGA328P-A;
-IdModule  = SMD_Packages:TQFP32;
-EndCmp
-
-BeginCmp
 TimeStamp = /53D7886C;
 Reference = P1;
 ValeurCmp = CONN_3X2;
@@ -81,21 +74,21 @@ BeginCmp
 TimeStamp = /53D7BFB0;
 Reference = P2;
 ValeurCmp = CONN_8;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x08;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x08;
 EndCmp
 
 BeginCmp
 TimeStamp = /53D7D8D3;
 Reference = P3;
 ValeurCmp = CONN_2;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /53D7CFCE;
 Reference = P4;
 ValeurCmp = CONN_6;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x06;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x06;
 EndCmp
 
 BeginCmp
@@ -152,6 +145,13 @@ TimeStamp = /53D78AC0;
 Reference = U1;
 ValeurCmp = LM78L05ACZ;
 IdModule  = Housings_SOT-89:SOT89-3_Housing_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D78762;
+Reference = U2;
+ValeurCmp = ATMEGA328P-A;
+IdModule  = SMD_Packages:TQFP32;
 EndCmp
 
 BeginCmp
