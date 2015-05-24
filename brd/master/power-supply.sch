@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:master-cache
-EELAYER 24 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -856,4 +856,6 @@ Wire Wire Line
 	8350 4450 8350 4350
 Wire Wire Line
 	8350 4350 9650 4350
+Wire Wire Line
+	6400 4250 6400 4200
 $EndSCHEMATC
