@@ -1,0 +1,41 @@
+PINOUT  CASCADE IN              CASCADE OUT
+    1   INPUT   CODTC           PASIVE  GROUND
+    2   INPUT   AUX1            OUTPUT  AUX1
+    3   BIDIR   A+              BIDIR   Y+
+    4   NC                      NC
+    5   PASIVE  GROUND          PASIVE  GROUND
+    6   OUTPUT  AUX2            INPUT   AUX2
+    7   BIDIR   B-              BIDIR   Z-
+    8   BIDIR   /IRQ            BIDIR  /IRQ
+    9   PASIVE  GROUND          INPUT   CIDTC
+
+
+COMM PLUGIN     PORT            NAME            FUNCTION
+    1           PB3             MISO            SPI / ISP
+    2           VCC             VCC             ISP POWER
+    3           PB1             SCK             SPI / ISP
+    4           PB2             MOSI            SPI / ISP
+    5           RESET           REXT            ISP RESET
+    6           GROUND          GND             ISP POWER
+    7           PG4             AUX3            AUX
+    8           PG5             AUX4            AUX
+    9           VCC             VCC             POWER
+    10          VCC             VCC             POWER
+    11          PE0             RXD0            USB TXD0
+    12          PE1             TXD0            USB RXD0
+    13          PE2             MDTC            USB DUSB
+    14          PE7             AUX1            AUX
+    15          PE6             CODTC           CASC CODTC
+    16          PE5             CIDTC           CASC CIDTC
+    17          PD3             TXD1            CASC TX1
+    18          PD2             RXD1            CASC RX1
+    19          PD0             INT             CASC IRQ_IN
+    20          PD4             IRQ             CASC IRQ_OUT
+    21          PD1             CAX1            CASC AUX_IN1
+    22          PD5             CAX2            CASC AUX_OUT1
+    23          PE4             CBX1            CASC AUX_IN2
+    24          PD6             CBX2            CASC AUX_OUT2
+    25          PD7             MIU             CASC MPULLUP
+    26          PG3             AUX2            AUX
+    27          GROUND          GND             POWER
+    28          GROUND          GND             POWER
