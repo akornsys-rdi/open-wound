@@ -28,16 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:slave-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Open wound"
-Date "sáb 06 dic 2014"
-Rev "rc2"
+Date "2015-06-30"
+Rev "1.0"
 Comp "Synusia"
-Comment1 "Under MIT License"
+Comment1 "Under GPLv3 License"
 Comment2 ""
 Comment3 "Designed by kwendenarmo"
 Comment4 "Slave layout"
@@ -77,9 +78,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2750 7550 2750
 Wire Wire Line
-	7100 2850 7400 2850
-Wire Wire Line
-	7400 2850 7550 2850
+	7100 2850 7550 2850
 Wire Wire Line
 	6900 3450 6950 3450
 Wire Wire Line
@@ -100,9 +99,7 @@ F 3 "" H 3800 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5350 4900 5450
-Wire Wire Line
-	4900 5450 4900 5550
+	4900 5350 4900 5550
 Wire Wire Line
 	4900 5350 5000 5350
 Wire Wire Line
@@ -115,9 +112,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 3250 5000 3250
 Wire Wire Line
-	4900 3050 4900 3150
-Wire Wire Line
-	4900 3150 4900 3250
+	4900 3050 4900 3250
 Wire Wire Line
 	5000 3150 4900 3150
 Connection ~ 4900 3150
@@ -165,36 +160,22 @@ F 3 "" H 5700 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 2450 6300 2600
+	6300 2450 6300 2700
 Wire Wire Line
-	6300 2600 6300 2700
+	6300 2050 6300 2250
 Wire Wire Line
-	6300 2050 6300 2100
+	5700 2050 5700 2250
 Wire Wire Line
-	6300 2100 6300 2250
+	5700 2450 5700 2700
 Wire Wire Line
-	5700 2050 5700 2100
+	4200 2100 4450 2100
 Wire Wire Line
-	5700 2100 5700 2250
-Wire Wire Line
-	5700 2450 5700 2600
-Wire Wire Line
-	5700 2600 5700 2700
-Wire Wire Line
-	4200 2100 4250 2100
-Wire Wire Line
-	4250 2100 4450 2100
-Wire Wire Line
-	4450 2000 4450 2100
-Wire Wire Line
-	4450 2100 4450 2250
+	4450 2000 4450 2250
 Wire Wire Line
 	4250 2250 4250 2100
 Connection ~ 4250 2100
 Wire Wire Line
-	3350 2000 3350 2100
-Wire Wire Line
-	3350 2100 3350 2250
+	3350 2000 3350 2250
 Wire Wire Line
 	3350 2100 3400 2100
 $Comp
@@ -246,13 +227,9 @@ $EndComp
 Wire Wire Line
 	8050 3150 8050 3000
 Wire Wire Line
-	7500 5150 7650 5150
+	7500 5150 7750 5150
 Wire Wire Line
-	7650 5150 7750 5150
-Wire Wire Line
-	7650 5050 7650 5150
-Wire Wire Line
-	7650 5150 7650 5275
+	7650 5050 7650 5275
 Wire Wire Line
 	7650 5575 7650 5475
 Connection ~ 7650 5150
@@ -271,15 +248,7 @@ Connection ~ 3350 2100
 Wire Wire Line
 	3700 3550 3750 3550
 Wire Wire Line
-	3750 3550 3750 3750
-Wire Wire Line
-	3750 3750 3750 3950
-Wire Wire Line
-	3750 3950 3750 4150
-Wire Wire Line
-	3750 4150 3750 4600
-Wire Wire Line
-	3750 4600 3750 4950
+	3750 3550 3750 4950
 Wire Wire Line
 	3700 3750 3750 3750
 Connection ~ 3750 3750
@@ -303,9 +272,7 @@ $EndComp
 Wire Wire Line
 	3850 4050 3700 4050
 Wire Wire Line
-	3850 3500 3850 3850
-Wire Wire Line
-	3850 3850 3850 4050
+	3850 3500 3850 4050
 Wire Wire Line
 	3700 3850 3850 3850
 Connection ~ 3850 3850
@@ -326,25 +293,21 @@ Wire Wire Line
 	3950 4700 3950 3650
 Wire Wire Line
 	3950 3650 3700 3650
-Wire Wire Line
-	6900 4750 8500 4750
-Wire Wire Line
-	6900 4850 8500 4850
 $Comp
 L +5V #PWR010
 U 1 1 53D7E8B6
-P 8400 4550
-F 0 "#PWR010" H 8400 4640 20  0001 C CNN
-F 1 "+5V" H 8400 4640 30  0000 C CNN
-F 2 "" H 8400 4550 60  0000 C CNN
-F 3 "" H 8400 4550 60  0000 C CNN
-	1    8400 4550
+P 8400 4325
+F 0 "#PWR010" H 8400 4415 20  0001 C CNN
+F 1 "+5V" H 8400 4415 30  0000 C CNN
+F 2 "" H 8400 4325 60  0000 C CNN
+F 3 "" H 8400 4325 60  0000 C CNN
+	1    8400 4325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 4550 8400 4650
+	8400 4325 8400 4450
 Wire Wire Line
-	8400 4650 8500 4650
+	8400 4450 8500 4450
 Wire Wire Line
 	6950 3450 6950 2450
 Wire Wire Line
@@ -352,9 +315,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 2450 8200 2750
 Wire Wire Line
-	6900 4600 7100 4600
-Wire Wire Line
-	7100 4600 8250 4600
+	6900 4600 8050 4600
 Wire Wire Line
 	8275 2850 8275 2950
 Wire Wire Line
@@ -371,17 +332,13 @@ Wire Wire Line
 Wire Wire Line
 	7300 3750 7300 3450
 Wire Wire Line
-	7300 3450 7550 3450
-Wire Wire Line
-	7550 3450 7725 3450
+	7300 3450 7725 3450
 Wire Wire Line
 	6900 3850 7300 3850
 Wire Wire Line
 	7300 3850 7300 4150
 Wire Wire Line
-	7300 4150 7550 4150
-Wire Wire Line
-	7550 4150 7725 4150
+	7300 4150 7725 4150
 Wire Wire Line
 	7550 3950 7550 4150
 Connection ~ 7550 4150
@@ -391,30 +348,21 @@ Connection ~ 7550 3450
 Wire Wire Line
 	7925 3450 8100 3450
 Wire Wire Line
-	8100 3450 8100 4150
-Wire Wire Line
-	8100 4150 8100 4250
+	8100 3450 8100 4250
 Wire Wire Line
 	8100 4150 7925 4150
 Connection ~ 8100 4150
 Wire Wire Line
-	6900 4950 8150 4950
+	8500 4850 8050 4850
 Wire Wire Line
-	8150 4950 8500 4950
-Wire Wire Line
-	8500 5050 8250 5050
-Wire Wire Line
-	8250 5050 8250 4600
+	8050 4850 8050 4600
 Wire Wire Line
 	7100 2850 7100 4600
 Connection ~ 7100 4600
 Wire Wire Line
-	8400 5225 8400 5150
+	8400 5225 8400 4950
 Wire Wire Line
-	8400 5150 8500 5150
-Wire Wire Line
-	8150 5150 8150 4950
-Connection ~ 8150 4950
+	8400 4950 8500 4950
 Wire Wire Line
 	8150 5450 8150 5600
 Wire Wire Line
@@ -442,7 +390,7 @@ Piezo
 Text Notes 8250 2775 0    60   ~ 0
 AVR ISP
 Text Notes 9000 5150 0    60   ~ 0
-DEBUG\n1. +5V\n2. RX\n3. TX\n4. OUT (TTL)\n5. /RESET\n6. GND
+DEBUG\n1. +5V\n2. OUT (TTL)\n3. TX\n4. RX\n5. /RESET\n6. GND
 Text Notes 2100 4300 0    60   ~ 0
 I/O Connector\n1. GND\n2. Audio\n3. GND\n4. VCC (+15V)\n5. GND\n6. VCC (+15V)\n7. GND\n8. OUT (Open collector)
 $Comp
@@ -800,12 +748,12 @@ $EndComp
 $Comp
 L CONN_01X06 P4
 U 1 1 55618C5A
-P 8700 4900
-F 0 "P4" H 8700 5250 50  0000 C CNN
-F 1 "DEBUG" V 8800 4900 50  0000 C CNN
-F 2 "asrdi-conn:IL-Z-6PL-SMTYE" H 8700 4900 60  0001 C CNN
-F 3 "" H 8700 4900 60  0000 C CNN
-	1    8700 4900
+P 8700 4700
+F 0 "P4" H 8700 5050 50  0000 C CNN
+F 1 "DEBUG" V 8800 4700 50  0000 C CNN
+F 2 "asrdi-conn:IL-Z-6PL-SMTYE" H 8700 4700 60  0001 C CNN
+F 3 "" H 8700 4700 60  0000 C CNN
+	1    8700 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -841,4 +789,19 @@ F 3 "" H 7950 5150 60  0000 C CNN
 	1    7950 5150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6900 4950 8150 4950
+Wire Wire Line
+	8150 4550 8150 5150
+Wire Wire Line
+	8500 4550 8150 4550
+Connection ~ 8150 4950
+Wire Wire Line
+	6900 4750 8500 4750
+Wire Wire Line
+	6900 4850 7950 4850
+Wire Wire Line
+	7950 4850 7950 4650
+Wire Wire Line
+	7950 4650 8500 4650
 $EndSCHEMATC

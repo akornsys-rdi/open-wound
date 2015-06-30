@@ -1,30 +1,33 @@
-open-wound
-==========
+# open-wound #
 
-open wound, the system behind the CUT artwork
+                                                      _ 
+         ___ _ __  ___ _ _   __ __ _____ _  _ _ _  __| |
+        / _ \ '_ \/ -_) ' \  \ V  V / _ \ || | ' \/ _` |
+        \___/ .__/\___|_||_|  \_/\_/\___/\_,_|_||_\__,_|
+            |_|                                         
+
+open wound, the system behind the [CUT artwork](http://www.arturomoyavillen.com/cut.html).
 
 ## ChangeLog  ##
 
-New release candidate 2
-
-- El microcontrolador pasa a ser parte de la placa, no un módulo Arduino.
-- Arreglados problemas en los esclavos.
-  * Los pines sin usar son salidas a nivel bajo no conectadas en lugar de entradas a masa.
-  * Se añade un conector AVRISP de seis pines.
-  * Se añade un conector de debug.
-  * Placa diseñada en SMT.
-  * Mejorado el método de conexión a la plancha sensora.
-- Numerosas mejoras en el maestro.
-  * El maestro ahora dispone de catorce canales.
-  * Cambiado el CI amplificador.
-  * Fuente de alimentación implementada.
-  * Fuente con salidas independientes.
-  * Usado los propios LED del RJ45 para indicar conexión y dato entrante.
-  * Actualizado el procesador a *ATMEGA1280*.
-  * Conexión USB a través de *FT232*.
-  * Incorporado conector AVRISP de seis pines.
-  * Añadidos múltiples indicadores de estado.
-  * Añadida la posibilidad de conectar varios maestros en cascada.
-  * Se permiten cuatro entradas para PIR, agrupadas en pares.
-  * La entrada de los PIR se considera módulo independiente.
+-   Cambios generales:  
+    *   Ahora open wound está bajo licencia GPLv3.  
+    *   Open wound usa [versionamiento semántico](http://semver.org).  
+-   Esclavos version 1.0.0:  
+    *   Cambios menores en PCB.  
+    *   El microcontrolador pasa a ser parte de la placa, no un módulo Arduino.  
+    *   Los pines sin usar son salidas a nivel bajo no conectadas en lugar de entradas a masa.  
+    *   Se añade un conector AVRISP de seis pines.  
+    *   Se añade un conector de debug.  
+    *   Placa diseñada en SMT..  
+    *   Mejorado el método de conexión a la plancha sensora.  
+    *   Ahora se usan conectores subminiatura con enclavamiento para su conexión.  
+-   Maestro en versión 1.0.0-alpha:  
+    *   El maestro ahora dispone de catorce canales para esclavos.  
+    *   Se permiten cuatro canales para PIR compatibles con los esclavos.  
+    *   Cambiado el CI amplificador.  
+    *   Entrada de audio compacta medianteconector DA15F.  
+    *   Buffer digital trigger-schmitt para acondicionar la señar de los esclavos.  
+    *   Usa los propios LED del RJ45 para indicar conexión y dato entrante.  
+    *   Ahora usa [freecanvas](https://github.com/synusia/freecanvas).
 
