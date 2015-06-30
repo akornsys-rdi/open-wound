@@ -29,5 +29,5 @@ open wound, the system behind the [CUT artwork](http://www.arturomoyavillen.com/
     *   Entrada de audio compacta medianteconector DA15F.  
     *   Buffer digital trigger-schmitt para acondicionar la señar de los esclavos.  
     *   Usa los propios LED del RJ45 para indicar conexión y dato entrante.  
-    *   Ahora usa [freecanvas](https://github.com/synusia/freecanvas).
+    *   Ahora usa [FreeCanvas](https://github.com/synusia/freecanvas).
 

@@ -34,14 +34,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Open wound"
+Date "2015-06-30"
+Rev "1.0.0-alpha"
+Comp "Synusia"
+Comment1 "Under GPLv3 License"
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Designed by kwendenarmo"
+Comment4 "Master layout"
 $EndDescr
 $Sheet
 S 3300 3400 1225 1150
