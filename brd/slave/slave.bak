@@ -1,33 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:slave-cache
 EELAYER 25 0
 EELAYER END
@@ -36,7 +8,7 @@ encoding utf-8
 Sheet 1 1
 Title "Open wound"
 Date "2015-06-30"
-Rev "1.0"
+Rev "1.0.0"
 Comp "Synusia"
 Comment1 "Under GPLv3 License"
 Comment2 ""
@@ -51,6 +23,7 @@ F 0 "U2" H 5150 5500 40  0000 L BNN
 F 1 "ATMEGA328P-A" H 6300 2850 40  0000 L BNN
 F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 5900 4250 30  0001 C CIN
 F 3 "" H 5900 4250 60  0000 C CNN
+F 4 "556-ATMEGA328P-AU" H 5900 4250 60  0001 C CNN "Vendor"
 	1    5900 4250
 	1    0    0    -1  
 $EndComp
@@ -95,6 +68,7 @@ F 0 "U1" H 3600 2350 40  0000 C CNN
 F 1 "LM78L05ACZ" H 3800 2350 40  0000 L CNN
 F 2 "Housings_SOT-89:SOT89-3_Housing_Handsoldering" H 3800 2250 30  0001 C CIN
 F 3 "" H 3800 2150 60  0000 C CNN
+F 4 "821-TS78L05ACY" H 3800 2150 60  0001 C CNN "Vendor"
 	1    3800 2150
 	1    0    0    -1  
 $EndComp
@@ -389,7 +363,7 @@ Text Notes 3075 4675 0    60   ~ 0
 Piezo
 Text Notes 8250 2775 0    60   ~ 0
 AVR ISP
-Text Notes 9000 5150 0    60   ~ 0
+Text Notes 8925 4975 0    60   ~ 0
 DEBUG\n1. +5V\n2. OUT (TTL)\n3. TX\n4. RX\n5. /RESET\n6. GND
 Text Notes 2100 4300 0    60   ~ 0
 I/O Connector\n1. GND\n2. Audio\n3. GND\n4. VCC (+15V)\n5. GND\n6. VCC (+15V)\n7. GND\n8. OUT (Open collector)
@@ -401,6 +375,7 @@ F 0 "Q1" H 8450 5451 40  0000 R CNN
 F 1 "BC847" H 8450 5750 40  0000 R CNN
 F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23_Handsoldering" H 8350 5702 29  0001 C CNN
 F 3 "" H 8450 5600 60  0000 C CNN
+F 4 "583-BC847 " H 8450 5600 60  0001 C CNN "Vendor"
 	1    8450 5600
 	1    0    0    -1  
 $EndComp
@@ -412,6 +387,7 @@ F 0 "C3" H 4460 2420 50  0000 L CNN
 F 1 "10nF" H 4460 2270 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4450 2350 60  0001 C CNN
 F 3 "" H 4450 2350 60  0000 C CNN
+F 4 "77-VJ0603Y103KXAAC" H 4450 2350 60  0001 C CNN "Vendor"
 	1    4450 2350
 	1    0    0    -1  
 $EndComp
@@ -423,6 +399,7 @@ F 0 "C2" H 4260 2420 50  0000 L CNN
 F 1 "1uF" H 4260 2270 50  0000 L CNN
 F 2 "Capacitors_SMD:c_elec_4x5.3" H 4250 2350 60  0001 C CNN
 F 3 "" H 4250 2350 60  0000 C CNN
+F 4 "598-AVE105M50B12T-F" H 4250 2350 60  0001 C CNN "Vendor"
 	1    4250 2350
 	1    0    0    -1  
 $EndComp
@@ -434,6 +411,7 @@ F 0 "C1" H 3360 2420 50  0000 L CNN
 F 1 "10uF" H 3360 2270 50  0000 L CNN
 F 2 "Capacitors_SMD:c_elec_5x5.3" H 3350 2350 60  0001 C CNN
 F 3 "" H 3350 2350 60  0000 C CNN
+F 4 "140-VE100M1HTR0505 " H 3350 2350 60  0001 C CNN "Vendor"
 	1    3350 2350
 	1    0    0    -1  
 $EndComp
@@ -445,6 +423,7 @@ F 0 "C4" H 5710 2420 50  0000 L CNN
 F 1 "100nF" H 5710 2270 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 2350 60  0001 C CNN
 F 3 "" H 5700 2350 60  0000 C CNN
+F 4 "77-VJ0603Y104JXJPBC " H 5700 2350 60  0001 C CNN "Vendor"
 	1    5700 2350
 	1    0    0    -1  
 $EndComp
@@ -456,6 +435,7 @@ F 0 "C5" H 6310 2420 50  0000 L CNN
 F 1 "100nF" H 6310 2270 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6300 2350 60  0001 C CNN
 F 3 "" H 6300 2350 60  0000 C CNN
+F 4 "77-VJ0603Y104JXJPBC " H 6300 2350 60  0001 C CNN "Vendor"
 	1    6300 2350
 	1    0    0    -1  
 $EndComp
@@ -467,6 +447,7 @@ F 0 "C6" H 7835 3520 50  0000 L CNN
 F 1 "22pF" H 7835 3370 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7825 3450 60  0001 C CNN
 F 3 "" H 7825 3450 60  0000 C CNN
+F 4 "77-VJ0603A220JXACBC" H 7825 3450 60  0001 C CNN "Vendor"
 	1    7825 3450
 	0    -1   -1   0   
 $EndComp
@@ -478,6 +459,7 @@ F 0 "C8" H 7835 4220 50  0000 L CNN
 F 1 "22pF" H 7835 4070 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7825 4150 60  0001 C CNN
 F 3 "" H 7825 4150 60  0000 C CNN
+F 4 "77-VJ0603A220JXACBC" H 7825 4150 60  0001 C CNN "Vendor"
 	1    7825 4150
 	0    -1   -1   0   
 $EndComp
@@ -489,6 +471,7 @@ F 0 "C9" H 7660 5445 50  0000 L CNN
 F 1 "100pF" H 7660 5295 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7650 5375 60  0001 C CNN
 F 3 "" H 7650 5375 60  0000 C CNN
+F 4 "77-VJ0603A101JXACBC " H 7650 5375 60  0001 C CNN "Vendor"
 	1    7650 5375
 	1    0    0    -1  
 $EndComp
@@ -500,6 +483,7 @@ F 0 "R2" V 6080 2600 50  0000 C CNN
 F 1 "10r" V 6000 2600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5930 2600 30  0001 C CNN
 F 3 "" H 6000 2600 30  0000 C CNN
+F 4 "71-CRCW0603-10-E3 " V 6000 2600 60  0001 C CNN "Vendor"
 	1    6000 2600
 	0    1    1    0   
 $EndComp
@@ -511,6 +495,7 @@ F 0 "R1" V 6080 2100 50  0000 C CNN
 F 1 "10r" V 6000 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5930 2100 30  0001 C CNN
 F 3 "" H 6000 2100 30  0000 C CNN
+F 4 "71-CRCW0603-10-E3 " V 6000 2100 60  0001 C CNN "Vendor"
 	1    6000 2100
 	0    1    1    0   
 $EndComp
@@ -522,6 +507,7 @@ F 0 "R3" V 7805 3150 50  0000 C CNN
 F 1 "10k" V 7725 3150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7655 3150 30  0001 C CNN
 F 3 "" H 7725 3150 30  0000 C CNN
+F 4 "603-SR0805JR-0710KL " V 7725 3150 60  0001 C CNN "Vendor"
 	1    7725 3150
 	0    1    1    0   
 $EndComp
@@ -533,6 +519,7 @@ F 0 "R4" V 7430 5150 50  0000 C CNN
 F 1 "1M" V 7350 5150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7280 5150 30  0001 C CNN
 F 3 "" H 7350 5150 30  0000 C CNN
+F 4 "71-CRCW0805-1.0M-E3 " V 7350 5150 60  0001 C CNN "Vendor"
 	1    7350 5150
 	0    1    1    0   
 $EndComp
@@ -544,6 +531,7 @@ F 0 "R5" V 8230 5300 50  0000 C CNN
 F 1 "2k2" V 8150 5300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8080 5300 30  0001 C CNN
 F 3 "" H 8150 5300 30  0000 C CNN
+F 4 "660-RK73B2ATTD222J " V 8150 5300 60  0001 C CNN "Vendor"
 	1    8150 5300
 	1    0    0    -1  
 $EndComp
@@ -555,6 +543,7 @@ F 0 "C7" H 4910 4070 50  0000 L CNN
 F 1 "100nF" H 4910 3920 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4900 4000 60  0001 C CNN
 F 3 "" H 4900 4000 60  0000 C CNN
+F 4 "77-VJ0603Y104JXJPBC " H 4900 4000 60  0001 C CNN "Vendor"
 	1    4900 4000
 	1    0    0    -1  
 $EndComp
@@ -698,6 +687,7 @@ F 0 "X1" H 7550 3950 50  0000 C CNN
 F 1 "16MHz" H 7550 3650 50  0000 C CNN
 F 2 "Crystals_Oscillators_SMD:Q_49U3HMS" H 7550 3800 60  0001 C CNN
 F 3 "" H 7550 3800 60  0000 C CNN
+F 4 "774-ATS16ASM-1" H 7550 3800 60  0001 C CNN "Vendor"
 	1    7550 3800
 	0    -1   -1   0   
 $EndComp
@@ -753,6 +743,7 @@ F 0 "P4" H 8700 5050 50  0000 C CNN
 F 1 "DEBUG" V 8800 4700 50  0000 C CNN
 F 2 "asrdi-conn:IL-Z-6PL-SMTYE" H 8700 4700 60  0001 C CNN
 F 3 "" H 8700 4700 60  0000 C CNN
+F 4 "656-IL-Z-6PL-SMTYE" H 8700 4700 60  0001 C CNN "Vendor"
 	1    8700 4700
 	1    0    0    -1  
 $EndComp
@@ -764,6 +755,7 @@ F 0 "P3" H 3500 4800 50  0000 C CNN
 F 1 "PIEZO" V 3600 4650 50  0000 C CNN
 F 2 "asrdi-conn:IL-Z-2PL-SMTYE" H 3500 4650 60  0001 C CNN
 F 3 "" H 3500 4650 60  0000 C CNN
+F 4 "656-IL-Z-2PL-SMTYE " H 3500 4650 60  0001 C CNN "Vendor"
 	1    3500 4650
 	-1   0    0    -1  
 $EndComp
@@ -775,6 +767,7 @@ F 0 "P2" H 3500 4350 50  0000 C CNN
 F 1 "IO" V 3600 3900 50  0000 C CNN
 F 2 "asrdi-conn:IL-Z-8PL-SMTYE" H 3500 3900 60  0001 C CNN
 F 3 "" H 3500 3900 60  0000 C CNN
+F 4 "656-IL-Z-8PL-SMTYE" H 3500 3900 60  0001 C CNN "Vendor"
 	1    3500 3900
 	-1   0    0    -1  
 $EndComp
