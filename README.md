@@ -6,7 +6,7 @@
         \___/ .__/\___|_||_|  \_/\_/\___/\_,_|_||_\__,_|
             |_|                                         
 
-open wound, the system behind the [CUT artwork](http://www.arturomoyavillen.com/cut.html).
+open wound, the system behind the [CUT artwork](http://arturomoyavillen.com/cut).
 
 ## ChangeLog  ##
 
